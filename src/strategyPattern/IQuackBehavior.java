@@ -1,4 +1,4 @@
-package StrategyPattern;
+package strategyPattern;
 
 public interface IQuackBehavior {
     void quack();

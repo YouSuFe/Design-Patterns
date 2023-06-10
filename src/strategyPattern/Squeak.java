@@ -1,4 +1,4 @@
-package StrategyPattern;
+package strategyPattern;
 
 public class Squeak implements IQuackBehavior{
     @Override

@@ -1,4 +1,4 @@
-package StrategyPattern;
+package strategyPattern;
 
 public class Quack implements IQuackBehavior{
     @Override
