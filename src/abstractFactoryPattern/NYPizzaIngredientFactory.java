@@ -2,24 +2,24 @@ package abstractFactoryPattern;
 
 import abstractFactoryPattern.ingredients.*;
 
-public class NYPizzaIngredientFactory implements IPizzaIngredientFactory {
+public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
-    public IDough createDough() {
+    public Dough createDough() {
         return new ThinCrustDough();
     }
 
     @Override
-    public ISauce createSauce() {
+    public Sauce createSauce() {
         return new MarinaraSauce();
     }
 
     @Override
-    public ICheese createCheese() {
+    public Cheese createCheese() {
         return new RagglanoCheese();
     }
 
     @Override
-    public IClams createClams() {
+    public Clams createClams() {
         return new FreshClams();
     }
 }

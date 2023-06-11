@@ -2,8 +2,8 @@ package strategyPattern;
 
 public abstract class Duck
 {
-    IFlyBehavior flyBehavior;
-    IQuackBehavior quackBehavior;
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
 
     public void swim()
     {
@@ -20,12 +20,12 @@ public abstract class Duck
         flyBehavior.fly();
     }
 
-    public void setFlyBehavior(IFlyBehavior flyBehav)
+    public void setFlyBehavior(FlyBehavior flyBehav)
     {
         this.flyBehavior = flyBehav;
     }
 
-    public void setQuackBehavior(IQuackBehavior quackBehav)
+    public void setQuackBehavior(QuackBehavior quackBehav)
     {
         this.quackBehavior = quackBehav;
     }

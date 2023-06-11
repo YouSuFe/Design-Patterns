@@ -6,7 +6,7 @@ public class ChicagoPizzaStore extends PizzaStore{
     @Override
     protected Pizza createPizza(String type) {
         Pizza pizza = null;
-        IPizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
+        PizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
         if (type.equals("cheese")) {
             pizza = new abstractFactoryPattern.pizzas.CheesePizza(ingredientFactory);
             pizza.setName("Chicago Style Cheese Pizza");

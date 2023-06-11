@@ -1,6 +1,6 @@
 package abstractFactoryPattern.ingredients;
 
-public class MarinaraSauce implements ISauce {
+public class MarinaraSauce implements Sauce {
     @Override
     public String toString() {
         return "Marinara Sauce";

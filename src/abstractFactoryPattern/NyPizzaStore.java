@@ -7,7 +7,7 @@ import abstractFactoryPattern.pizzas.Pizza;
 public class NyPizzaStore extends PizzaStore{
     protected Pizza createPizza(String item) {
         Pizza pizza = null;
-        IPizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
         if (item.equals("cheese")) {
             pizza = new CheesePizza(ingredientFactory);
             pizza.setName("New York Style Cheese Pizza");

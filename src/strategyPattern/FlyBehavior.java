@@ -1,5 +1,5 @@
 package strategyPattern;
 
-public interface IFlyBehavior {
+public interface FlyBehavior {
     public void fly();
 }

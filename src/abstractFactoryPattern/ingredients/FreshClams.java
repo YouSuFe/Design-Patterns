@@ -1,6 +1,6 @@
 package abstractFactoryPattern.ingredients;
 
-public class FreshClams implements IClams {
+public class FreshClams implements Clams {
     @Override
     public String toString() {
         return "Fresh Clams";

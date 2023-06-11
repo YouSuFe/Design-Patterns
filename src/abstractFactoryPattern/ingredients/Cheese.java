@@ -1,6 +1,6 @@
 package abstractFactoryPattern.ingredients;
 
-public interface ISauce {
+public interface Cheese {
     @Override
     String toString();
 }

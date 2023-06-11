@@ -1,6 +1,6 @@
 package abstractFactoryPattern.ingredients;
 
-public interface IDough {
+public interface Clams {
     @Override
     String toString();
 }

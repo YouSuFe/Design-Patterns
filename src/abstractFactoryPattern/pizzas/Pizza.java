@@ -1,16 +1,16 @@
 package abstractFactoryPattern.pizzas;
 
-import abstractFactoryPattern.ingredients.ICheese;
-import abstractFactoryPattern.ingredients.IClams;
-import abstractFactoryPattern.ingredients.IDough;
-import abstractFactoryPattern.ingredients.ISauce;
+import abstractFactoryPattern.ingredients.Cheese;
+import abstractFactoryPattern.ingredients.Clams;
+import abstractFactoryPattern.ingredients.Dough;
+import abstractFactoryPattern.ingredients.Sauce;
 
 public abstract class Pizza {
     protected String name;
-    protected IDough dough;
-    protected ISauce sauce;
-    protected ICheese cheese;
-    protected IClams clams;
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Cheese cheese;
+    protected Clams clams;
 
     public abstract void prepare();
 

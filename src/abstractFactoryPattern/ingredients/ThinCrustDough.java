@@ -1,6 +1,6 @@
 package abstractFactoryPattern.ingredients;
 
-public class ThinCrustDough implements IDough {
+public class ThinCrustDough implements Dough {
     @Override
     public String toString() {
         return "Thin Crust Dough";
