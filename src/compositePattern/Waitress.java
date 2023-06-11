@@ -4,25 +4,25 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Waitress {
-    ArrayList menus;
-    public Waitress(ArrayList menus) {
-        this.menus = menus;
+    MenuComponent allMenus;
+    public Waitress(MenuComponent allMenus) {
+        this.allMenus = allMenus;
     }
 
     public void printMenu() {
-        Iterator menuIterator = menus.iterator();
-        while (menuIterator.hasNext()) {
-            Menu menu = (Menu)menuIterator.next();
-            printMenu(menu.createIterator());
-        }
+        allMenus.print();
     }
 
-    private void printMenu(Iterator iterator) {
+    public void printVegetarianMenu() {
+        Iterator iterator = allMenus.createIterator();
+        System.out.println("\nVEGETARIAN MENU\n----");
         while (iterator.hasNext()) {
-            MenuItem menuItem = (MenuItem)iterator.next();
-            System.out.println(menuItem.getName() + ", ");
-            System.out.println(menuItem.getPrice() + " -- ");
-            System.out.println(menuItem.getDescription());
+            MenuComponent menuComponent = (MenuComponent)iterator.next();
+            try {
+                if (menuComponent.isVegetarian()) {
+                    menuComponent.print();
+                }
+            } catch (UnsupportedOperationException e) {}
         }
     }
 }

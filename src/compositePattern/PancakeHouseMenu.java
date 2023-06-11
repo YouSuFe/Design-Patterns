@@ -3,7 +3,7 @@ package compositePattern;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu {
     ArrayList menuItems;
 
     public PancakeHouseMenu(){
